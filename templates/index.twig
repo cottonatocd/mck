@@ -1,1 +1,63 @@
-homepage
+{% extends '_layout' %}
+{% block main %}
+            
+            <div id="replace-me">
+                <div class="container-fluid">
+                    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="background-image:url(../vendor/assets/mck-carousel/cavatelli.png)"></div>
+                            <div class="carousel-item" style="background-image:url(../vendor/assets/mck-carousel/piadina-close.png)"></div>
+                            <div class="carousel-item" style="background-image:url(../vendor/assets/mck-carousel/exterior.jpg)"></div>
+                            <div class="carousel-item" style="background-image:url(../vendor/assets/mck-carousel/fiochi.png)"></div>
+                            <div class="carousel-item" style="background-image:url(../vendor/assets/mck-carousel/interior-2.png)"></div>
+                            <div class="carousel-item" style="background-image:url(../vendor/assets/mck-carousel/focaccia-2.png)"></div>
+                            <div class="carousel-item" style="background-image:url(../vendor/assets/mck-carousel/bags.jpg)"></div>
+                            <div class="carousel-item" style="background-image:url(../vendor/assets/mck-carousel/steak.png)"></div>
+                            <div class="carousel-item" style="background-image:url(../vendor/assets/mck-carousel/interior-1.png)"></div>
+                            <div class="carousel-item" style="background-image:url(../vendor/assets/mck-carousel/octopus.png)"></div>
+                            <div class="carousel-item" style="background-image:url(../vendor/assets/mck-carousel/piadina.png)"></div>
+                            <div class="carousel-item" style="background-image:url(../vendor/assets/mck-carousel/olive-oil.jpg)"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mobile-reserve-btn-container">
+                        <div class="mobile-reserve-btn">
+                        <a id="reserve-link-2" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                <h3>Reserve</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <section class="container-fluid hidden" id="reserve">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-sm-12 align-self-center">
+                                <h2>Reserve</h2>
+                                <div class="desktop-reserve">
+                                        <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=172900&type=standard&theme=wide&iframe=false&overlay=false&domain=com&lang=en-US'></script>
+
+                                </div>
+                                <div class="mobile-reserve">
+                                        <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=172900&type=standard&theme=standard&iframe=false&overlay=false&domain=com&lang=en-US'></script>
+                                </div>
+                                <h4>By Phone</h4>
+                                <p><a href="tel:1-305-456-9948">(305) 456-9948</a></p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="container-fluid hidden d-flex" id="menus">
+                <div class="container align-self-center">
+                        <h1><a href="brunch.html" class="load-ajax">Brunch</a></h1>
+                        <h1><a href="lunch.html" class="load-ajax">Lunch</a></h1>
+                        <h1><a href="dinner.html" class="load-ajax">Dinner</a></h1>
+                        <h1><a href="dessert.html" class="load-ajax">Dessert</a></h1>
+                        <h1><a href="drinks.html" class="load-ajax">Drinks</a></h1>
+                </div>
+            </section>
+
+{% endblock %}
