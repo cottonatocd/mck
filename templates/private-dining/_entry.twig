@@ -24,7 +24,7 @@
                 </g>
             </svg>
             <p class="lead">
-                MC Kitchen is able to accomodate parties both large and small, and offers a broad selection of experiences that cater directly to your group’s needs.
+                {{ entry.privateDiningIntro }}
             </p>
             <p class="callout">For inquiries about all forms of private dining, please <a href="mailto:info@mckitchenmiami.com">email us.</a></p>
         </div>
@@ -38,12 +38,12 @@
                 <div class="col-sm-10 col-md-6 mt-5 mt-md-0 offset-sm-1 offset-md-0 offset-lg-1 col-lg-4 align-self-center">
                     <h3>Chef's Dining Room</h3>
                     <h5>Accommodates</h5>
-                    <p>up to 12 guests</p>
+                    <p>{{ entry.chefsDiningRoomAccommodates }}</p>
                     <h5>Facilities</h5>
-                    <p>Computer<br>iPod<br>Audio system with surround sound<br>72-inch flat screen with HD cable</p>
+                    {{ entry.chefsDiningRoomFacilities }}
                     <h5>Provisions</h5>
-                    <p>Special menu with wine pairing</p>
-                    <p class="description">Tucked behind a beautiful barnyard door is MC Kitchen’s elegant Chef’s Dining Room. A unique dining experience, the private room is good for intimate gatherings, a lunch or dinner meeting, birthdays and celebrations, or just to enjoy life. We welcome last minute arrangements; as such our Chef’s Dining Room is also open for walk-in parties when available.</p>
+                    <p>{{ entry.chefsDiningRoomProvisions }}</p>
+                    <p class="description">{{ entry.chefsDiningRoomDescription }}</p>
                 </div>
             </div>
             <div class="row mt-4 mb-2" id="main-dining-room">
@@ -53,12 +53,12 @@
                 <div class="order-2 order-md-1 col-sm-10 col-md-6 mt-5 mt-md-0 offset-sm-1 offset-md-0 offset-lg-1 col-lg-4 align-self-center">
                         <h3>Main Dining Room</h3>
                         <h5>Accommodates</h5>
-                        <p>up to 40 guests</p>
+                        <p>{{ entry.mainDiningRoomAccommodates }}</p>
                         <h5>Provisions</h5>
-                        <p>Pre-established menu & bar options</p>
+                        <p>{{ entry.mainDiningRoomProvisions }}</p>
                         <h5>Privacy</h5>
-                        <p>Semi-private</p>
-                        <p class="description">Tucked behind a beautiful barnyard door is MC Kitchen’s elegant Chef’s Dining Room. A unique dining experience, the private room is good for intimate gatherings, a lunch or dinner meeting, birthdays and celebrations, or just to enjoy life. We welcome last minute arrangements; as such our Chef’s Dining Room is also open for walk-in parties when available.</p>
+                        <p>{{ entry.mainDiningRoomPrivacyLevel }}</p>
+                        <p class="description">{{ entry.mainDiningRoomDescription }}</p>
                 </div>
             </div>
             <div class="row mt-4 mb-2" id="full-dining-room">
@@ -68,12 +68,12 @@
                 <div class="col-sm-10 col-md-6 mt-5 mt-md-0 offset-sm-1 offset-md-0 offset-lg-1 col-lg-4 align-self-center">
                     <h3>Full Private Dinner</h3>
                     <h5>Accommodates</h5>
-                    <p>up to 100 guests</p>
+                    <p>{{ entry.fullPrivateDinnerAccommodates }}</p>
                     <h5>Provisions</h5>
-                    <p>Pre-established menu & bar options</p>
+                    <p>{{ entry.fullPrivateDinnerProvisions }}</p>
                     <h5>Privacy</h5>
-                    <p>Full Privacy</p>
-                    <p class="description">Tucked behind a beautiful barnyard door is MC Kitchen’s elegant Chef’s Dining Room. A unique dining experience, the private room is good for intimate gatherings, a lunch or dinner meeting, birthdays and celebrations, or just to enjoy life. We welcome last minute arrangements; as such our Chef’s Dining Room is also open for walk-in parties when available.</p>
+                    <p>{{ entry.fullPrivateDinnerPrivacy }}</p>
+                    <p class="description">{{ entry.fullPrivateDinnerDescription }}</p>
                 </div>
             </div>
 

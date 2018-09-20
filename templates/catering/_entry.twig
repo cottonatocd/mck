@@ -1,0 +1,166 @@
+<html class="no-js" lang="en">
+    <head>
+        <title>Catering | MC Kitchen</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i" rel="stylesheet">
+        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ siteUrl }}css/bootstrap.css">
+        <link rel="stylesheet" href="{{ siteUrl }}css/styles.css">
+    </head>
+
+    <body id="catering" data-spy="scroll" data-target="#mainNav" data-offset="500" data-gr-c-s-loaded="true" style="position: relative">
+        <div class="container-fluid full">
+            <div class="both-navs fixed-top">
+                    <nav class="nav-global navbar-expand navbar navbar-dark bg-primary mx-auto">
+                        <div class="container">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ siteUrl }}mercato">Mercato</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ siteUrl }}">Kitchen</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ siteUrl }}catering">Catering</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                     <nav class="nav-catering navbar navbar-expand-md navbar-light" id="mainNav">
+                         <div class="container mobile-nav">
+                            <div class="row">
+                                <div class="brand-container">
+                                <a class="navbar-brand catering-brand" href="index.html"></a>
+                                </div>
+                                <div class="hamburger-container">
+                                    <button class="navbar-toggler hamburger hamburger--spring" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                                            <span class="hamburger-box">
+                                                <span class="hamburger-inner"></span>
+                                            </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about" data-toggle="collapse" data-target=".navbar-collapse.show">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#services" data-toggle="collapse" data-target=".navbar-collapse.show">Catering Services</a>
+                                    </li>
+                                    <a class="navbar-brand catering-brand" href="catering.html"></a>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sample-menu" data-toggle="collapse" data-target=".navbar-collapse.show">Sample Menu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">Hours & Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </nav>
+            </div>
+        </div>
+            
+            
+            
+        <div class="container-fluid">
+            <div id="carousel" class="carousel slide carousel-fade " data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image:url(assets/catering-hero.png)">
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="container">
+            <div id="about">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 offset-md-3">
+                        <p class="lead">
+                                {{ entry.cateringIntroCopy }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="services">
+                <div class="rows">
+                        <div class="row mt-4 mb-2">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="img" style="background-image:url(../vendor/assets/catering-1.png)"></div>
+                            </div>
+                            <div class="col-sm-10 col-md-6 mt-5 mt-md-0 offset-sm-1 offset-md-0 offset-lg-1 col-lg-4 align-self-center">
+                                <h3>{{ entry.cateringOffering1Title }}</h3>
+                                <p class="description">{{ entry.cateringOffering1Description }}</p>
+                            </div>
+                        </div>
+                        <div class="row mt-4 mb-2">
+                            <div class="order-1 order-md-2 offset-md-0 offset-lg-1 col-sm-12 col-md-6">
+                                <div class="img" style="background-image:url(../vendor/assets/catering-2.png)"></div>
+                            </div>
+                            <div class="order-2 order-md-1 col-sm-10 col-md-6 mt-5 mt-md-0 offset-sm-1 offset-md-0 offset-lg-1 col-lg-4 align-self-center">
+                                    <h3>{{ entry.cateringOffering2Title }}</h3>
+                                    <p class="description">{{ entry.cateringOffering2Description }}</p>    
+                            </div>
+                        </div>
+                        <div class="row mt-4 mb-2">
+                            <div class="col-sm-12 col-md-6">
+                                    <div class="img" style="background-image:url(../vendor/assets/catering-3.png)"></div>
+                            </div>
+                            <div class="col-sm-10 col-md-6 mt-5 mt-md-0 offset-sm-1 offset-md-0 offset-lg-1 col-lg-4 align-self-center">
+                                <h3>{{ entry.cateringOffering3Title }}</h3>
+                                <p class="description">{{ entry.cateringOffering3Description }}</p>
+                            </div>
+                        </div>
+                        <div class="row mt-4 mb-2">
+                            <div class="order-1 order-md-2 offset-md-0 offset-lg-1 col-sm-12 col-md-6">
+                                <div class="img" style="background-image:url(../vendor/assets/catering-4.png)"></div>
+                            </div>
+                            <div class="order-2 order-md-1 col-sm-10 col-md-6 mt-5 mt-md-0 offset-sm-1 offset-md-0 offset-lg-1 col-lg-4 align-self-center">
+                                    <h3>{{ entry.cateringOffering4Title }}</h3>
+                                    <p class="description">{{ entry.cateringOffering4Description }}</p>    
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div id="sample-menu" class="bg-mck-light">
+                <h3>Sample Menu</h3>
+                <p class="callout">MC Catering is dedicated to providing the right food for your event. <a href="mailto:info@mckitchenmiami.com">Contact us</a> to discuss all menu options.</p>
+                <ul class="list-unstyled">
+                    {% set entries = craft.entries.section('menuItems').all() %}             
+                        {% for entry in entries %}
+                            {%  for whichMenu in entry.whichMenu %}
+                                {% if whichMenu.slug == 'catering-sample-menu' %}
+                            <li>
+                                <div class="menu-item-name">{{ entry.title }}</div>
+                                <div class="menu-item-description">{{ entry.menuItemDescription }}</div>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-bottom"></div>
+        <footer id="contact">
+            
+                        <h3 class="mb-4">Inquiries</h3>
+                        <p class="lead"><a href="mailto:catering@mckitchenmiami.com">catering@mckitchenmiami.com </a>
+                        <br><a href="tel:305-555-8989">(305) 555-8989</a></p>
+
+        </footer>
+        
+
+
+        <script src="{{ siteUrl }}js/jquery.min.js"></script>
+        <script src="{{ siteUrl }}js/popper.min.js"></script>
+        <script src="{{ siteUrl }}js/bootstrap.min.js"></script>
+        <script src="{{ siteUrl }}js/widont.min.js"></script>
+        <script src="{{ siteUrl }}js/script.js"></script>
+        
+    </body>
+</html>

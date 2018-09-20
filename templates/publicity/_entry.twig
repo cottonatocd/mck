@@ -21,9 +21,9 @@
     <div class="row">
         <div class="col col ccol-sm-12 col-md-10 col-lg-8 col-xl-6 offset-md-1 offset-lg-2 offset-xl-3">
             <ul class="list-unstyled ">
-            {% for entry in craft.entries.section('publicity').limit(10).all() %}
+            {% for entry in craft.entries.section('publicity').limit(100).all() %}
                 <li>
-                    <a href="{{ entry.url }}" target="_blank">
+                    <a href="{{ entry.publicityLink }}" target="_blank">
                         <h5>{{ entry.newsSource }}</h5>
                         <p class="lead">{{ entry.title }}</p>
                         <p class="subtext">{{ entry.datePosted }}</p>

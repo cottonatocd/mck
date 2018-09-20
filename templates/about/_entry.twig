@@ -3,7 +3,7 @@
 
 <section class="container" id="about">
         <div class="header-section">
-            <div class="row">
+            <div class="row lead">
                 <div class="col col-sm-12 col-md-10 col-lg-8 col-xl-6 offset-md-1 offset-lg-2 offset-xl-3">
                     <svg width="681px" height="397px" viewBox="0 0 681 397" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <defs></defs>
@@ -14,9 +14,9 @@
                             </g>
                         </g>
                     </svg>
-                    <p class="lead">
-                           {{ entry.leadText }}
-                    </p>
+                    
+                    {{ entry.leadText }}
+                    
 
                     <svg class="established" width="291px" height="50px" viewBox="0 0 291 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <defs></defs>
@@ -44,7 +44,10 @@
             </div>
             <div class="row">
                 <div class="col col-12 col-md-6 col-lg-5">
-                    <img src="{{ entry.img1 }}">
+                    {% set image = entry.teamMember1image %}
+                    
+                    <img src="{{ image }}">
+                    
                 </div>
                 <div class="col col-12 col-sm-10 offset-sm-1 col-md-6 col-lg-5 col-xl-4 offset-md-0 offset-lg-1 offset-xl-1">
                     <div class="top-info">
